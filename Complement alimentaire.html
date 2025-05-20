@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détail du produit</title>
+  <link rel="stylesheet" href="Produit.css"> 
+</head>
+<body>
+  <header>
+    
+  </header>
+
+  <main>
+    <div class="produit-detail">
+      <img src="au-masculin-60-gelules.jpg" alt="Complement alimentaire">
+      
+      <div class="info">
+        <h2>Complement alimentaire</h2>
+        <p>vitalité masculine 60 gélules</p>
+        <p class="prix">18.000 Ar Ar</p>
+
+        <!-- Champ quantité -->
+        <label for="quantite">Quantité :</label>
+        <input type="number" id="quantite" min="1" value="1" class="quantite">
+
+        <!-- Bouton ajout -->
+        <button class="btn" onclick="ajouterAuPanier('Complement alimentaire', 12000, 'au-masculin-60-gelules.jpg', 'quantite')">
+          Ajouter au panier
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script src="Gestion de panier.js"></script> 
+</body>
+</html>

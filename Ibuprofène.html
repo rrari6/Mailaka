@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détail du produit</title>
+  <link rel="stylesheet" href="Produit.css"> 
+</head>
+<body>
+  <header>
+    
+  </header>
+
+  <main>
+    <div class="produit-detail">
+      <img src="Ibuprofène.webp" alt="Ibuprofène">
+      
+      <div class="info">
+        <h2>Ibuprofène</h2>
+        <p>pour les douleurs et fièvre migraines</p>
+        <p class="prix">32 000 Ar</p>
+
+       
+        <label for="quantite">Quantité :</label>
+        <input type="number" id="quantite" min="1" value="1" class="quantite">
+
+        
+        <button class="btn" onclick="ajouterAuPanier('Ibuprofène', 32000, 'Ibuprofène.webp', 'quantite')">
+          Ajouter au panier
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script src="Gestion de panier.js"></script> 
+</body>
+</html>

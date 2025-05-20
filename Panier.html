@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Panier</title>
+  <link rel="stylesheet" href="Styles/Panier.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Pharmacie <span>Mailaka</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="homme.html">Homme</a></li>
+        <li><a href="femme.html">Femme</a></li>
+        <li><a href="enfant.html">Enfant</a></li>
+        <li><a href="panier.html">Panier</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Votre Panier</h2>
+    <div class="panier-items">
+      <div class="panier-item">
+        <img src="images/produit1.jpg" alt="Produit 1">
+        <div class="item-info">
+          <h3>Produit 1</h3>
+          <p>0 Ar</p>
+          <input type="number" value="1" min="0" class="quantity">
+          <button class="btn remove-btn">Retirer</button>
+        </div>
+      </div>
+      <div class="panier-item">
+        <img src="images/produit2.jpg" alt="Produit 2">
+        <div class="item-info">
+          <h3>Produit 2</h3>
+          <p>0 Ar</p>
+          <input type="number" value="1" min="0" class="quantity">
+          <button class="btn remove-btn">Retirer</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="total">
+      <p>Total: <span>0 Ar</span></p>
+    </div>
+    <div class="panier-items" id="panierItems"></div>
+    <div class="total">
+      <p>Total: <span id="total"></span></p>
+      <button class="btn">Passer au paiement</button>
+    </div>
+    
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pharmacie Mailaka. Tous droits réservés.</p>
+  </footer>
+
+  <script src="Gestion de panier.js"></script>
+</body>
+</html>
